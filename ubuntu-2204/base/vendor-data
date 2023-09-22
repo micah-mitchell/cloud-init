@@ -94,3 +94,4 @@ runcmd:
   - systemctl start qemu-guest-agent
   - git clone https://github.com/micah-mitchell/ansible /tmp/ansible
   - ansible-playbook -c local /tmp/ansible/update.yml
+  - ansible-playbook -c local /tmp/ansible/docker.yml
