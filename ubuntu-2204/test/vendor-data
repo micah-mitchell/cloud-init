@@ -1,0 +1,10 @@
+#cloud-config
+package_update: true
+package_reboot_if_required: true
+packages:
+  - git
+  - ansible
+
+runcmd:
+  - git clone https://github.com/micah-mitchell/ansible /tmp/ansible
+  - ansible-playbook -i /tmp/ansible/hosts -c local /tmp/ansible/provision.yml
