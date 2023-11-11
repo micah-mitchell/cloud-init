@@ -6,5 +6,5 @@ packages:
   - ansible
 
 runcmd:
-  - git clone https://github.com/micah-mitchell/ansible /tmp/ansible
-  - ansible-playbook -i /tmp/ansible/hosts -c local /tmp/ansible/provision.yml
+#  - git clone https://github.com/micah-mitchell/ansible /tmp/ansible
+#  - ansible-playbook -i /tmp/ansible/hosts -c local /tmp/ansible/provision.yml
